@@ -1,0 +1,528 @@
+@font-face {
+  font-family: Sansumi-Bold;
+  src: url(Fonts/Sansumi-Bold.ttf);
+}
+
+@font-face {
+  font-family: FontAwesome;
+  src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+}
+
+.logoNameFontFamily {
+  font-family: Sansumi-Bold;
+}
+
+.bodyFontFamily {
+  font-family: 'Titillium Web';
+}
+
+body {
+  border: 0px solid #fafafa;
+  margin-top: 0px;
+  color: #6b6b6b;
+  background-color: #fafafa;
+}
+
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#navList {
+  position: absolute;
+  top: 0!important;
+}
+
+nav ul {
+  overflow: hidden;
+  right: 0;
+  -webkit-transition: max-height 0.4s!important;
+  -ms-transition: max-height 0.4s!important;
+  -moz-transition: max-height 0.4s!important;
+  -o-transition: max-height 0.4s!important;
+  transition: max-height 0.4s!important;
+}
+
+nav ul li {
+  padding: 0px 20px 0px 20px!important;
+  display: inline-block!important;
+  list-style-type: none!important;
+  white-space: normal!important;
+}
+
+.hostName {  position: absolute;
+  top: 0!important;
+  float: left;
+  text-decoration: none;
+  text-align: left;
+  white-space: normal;
+  letter-spacing: 0.20em;
+  font-size: 24px;
+  color: #656565;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.hostName:hover {
+  text-decoration: none;
+}
+
+#horizontalNavBorder {
+  display: none;
+}
+
+a,
+.nonLinkedParent {
+  color: #6c6343;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+li a:hover {
+  background-color: #f0f0f0;
+  text-decoration: underline;
+}
+
+#removeHover:hover {
+  background-color: transparent;
+}
+
+title {
+  display: none;
+}
+
+#socialNetworkLinks {
+  background-color: transparent;
+}
+
+.facebookIcon:before {
+  content: "\e616";
+  font-family: FontAwesome;
+}
+
+.facebookIcon {
+  font-style: normal;
+  font-size: 15px;
+  color: #828282;
+}
+
+#titleOfImage {
+  float: left;
+  font-size: 12px;
+  margin-bottom: 0;
+  text-align: left;
+}
+/*-------------------------------------------------contact page------------------------------------------------*/
+#hostEmailAdress a {
+  font-size: 20px;
+  margin-left: 20px;
+  padding-top: 40px;
+  display: block;
+}
+
+#textPageContainer {
+  float: left;
+  text-align: left;
+  white-space: normal;
+  letter-spacing: 0em;
+  padding left: 0;
+  padding-right: 25px;
+  border-radius: 0;
+  font-size: 13px;
+  box-shadow: none;
+}
+
+.formMargin {
+  white-space: normal;
+}
+
+.form {
+  display: inline-block;
+  margin-left: 1%;
+  width: 100%;
+  min-width: 100%;
+  margin-top: 400px;
+}
+
+#TEXTAREA {
+  font-family: inherit;
+}
+
+.form-control {
+  border-radius: 0;
+  font-size: 13px;
+  box-shadow: none;
+  padding: 5px 3px;
+  background-image: none;
+  line-height: ;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  /* width: 380px; */
+}
+
+.text-input {
+  color: #385056;
+  font-family: ;
+}
+
+.container {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1em;
+  margin: .67em 0;
+  font-weight: 600;
+  display: block;
+  -webkit-margin-before: 0.67em;
+  -webkit-margin-after: 0.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+.form-group>label {
+  display: block;
+}
+
+.field-text label {
+  cursor: default;
+  padding-top: 10px;
+}
+
+.singleTopMargin {
+  margin-top: 10px;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid #CCC;
+  background-color: #FFF;
+  padding: .38em .6em;
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+  font-family: inherit;
+  margin-top: 10px;
+}
+
+.lightRoundedCorners {
+  border-radius: 10px;
+}
+
+.moduleFormButton:hover {
+  border-color: #CCC;
+  background-color: eeeded;
+}
+
+#formMarginL {
+  margin-left: 1%;
+}
+
+input {
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-appearance: textfield;
+  -webkit-writing-mode: horizontal-tb;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+}
+
+.control {
+  border-radius: 0;
+  font-size: 13px;
+  box-shadow: none;
+}
+
+input[type=text],
+input[type=password] {
+  border: 1px solid #CCC;
+  padding: 5px 3px;
+}
+
+.select {
+  font-family: inherit;
+  padding-left: 0;
+}
+
+li:first-child li:last-child {
+  border-radius: 0;
+  font-size: 13px;
+  box-shadow: none;
+  padding: 5px 3px;
+}
+
+#textPageContainer {
+  min-width: ;
+  white-space: normal;
+}
+
+.pdfIconFloatContainer {
+  z-index: 10;
+}
+
+form {
+  margin-top: ;
+}
+
+/*----------------------------------------------Login page-----------------------------------------------*/
+.myPos {
+  display: block;
+  text-align: center;
+  opacity: 1;
+  margin: 0 auto;
+}
+
+/*-----------------------------------------------Story Page-----------------------------------------------*/
+.statement {
+  font-family: 'Titillium Web';
+  text-align: justify;
+  width: px;
+  margin-left: 25px;
+  padding-top: 1px;
+  line-height: 1.7em;
+}
+
+.name {
+  font-family: 'Titillium Web';
+  margin-left: 0px;
+  padding-bottom: 0px;
+  white-space: 4px;
+}
+
+/*----------------------------------------------Video Page-----------------------------------------------*/
+.blog {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+#Video_player_box {
+  /* float: left; */
+  /* margin-left: 25px; */
+  /* margin-top: 80px; */
+  margin: 8px;
+  flex-basis: calc(50% - 16px);
+  text-align: center;
+}
+
+img {
+  align-items: center;
+}
+
+#pageContentSeperatorLine {
+  margin-top: 39px;
+  margin-bottom: 30px;
+  width: 50%;
+  margin-left: 0;
+  max-width: 500px;
+  height: 0;
+  text-align: left;
+  border: 0;
+  border-bottom: solid 1px #b5c9d8;
+  line-height: 1.7em;
+}
+
+#textFooter {
+  text-align: left;
+  margin-left: 25px;
+  margin-bottom: 45px;
+  margin-right: 25px;
+  margin-top: 0;
+  display: block;
+  color: #6b6b6b;
+  font-size: 13px;
+}
+
+.title,
+.year {
+  font-size: 12px;
+}
+
+.thumb {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.desc {
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  text-align: left;
+}
+
+#logoArt {
+  letter-spacing: 0em;
+  font-size: 15px;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+/*----------------------------------------------------------Big Image---------------------------------------------------*/
+#box {
+  margin-bottom: 9px;
+}
+
+#box .big-image {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.88);
+}
+
+#box .big-image .exit {
+  width: 40px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  left: 26px;
+  top: 26px;
+  cursor: pointer;
+
+}
+
+#box .big-image .exit:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+#box .big-image .exit:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  transform: rotate(45deg);
+
+}
+
+#box .big-image img {
+  height: 99%;
+  animation: fa
+}
+
+/*----------------------------------------------------------Blog---------------------------------------------------*/
+#myVideo {
+  width: 600px;
+}
+
+/*-------------------------------------------------------media qury-------------------------------------------------*/
+@media screen and (max-width: 770px) {
+  .form-control {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #statement {
+    font-family: 'Titillium Web';
+    height: auto;
+    width: 250px;
+    position: static;
+    box-sizing: border-box;
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 770px) {
+  nav ul {
+    max-height: 0px;
+     background: rgba(255,255,255, 0.7);
+    margin-top: 13%;
+    position:  inherit!important;
+    opacity: 50%!important;
+  }
+
+  .showing {
+    max-height: 30em;
+    /* display: block!important; */
+  }
+
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+  }
+
+  .humberger_menu::after {
+    top: 0!important;
+    position: absolute!important;
+    right: 5px!important;
+    display: block!important;
+    content: "\f0c9"!important;
+    font-family: FontAwesome;
+    color: grey!important;
+    font-size: 42px!important;
+    float: right!important;
+    text-align: right!important;
+  }
+
+  .humberger_menu.active {
+    content: "\f057";
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 770px) {
+  #myVideo {
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #Video_player_box {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .form {
+    margin-top: 50px;
+  }
+}

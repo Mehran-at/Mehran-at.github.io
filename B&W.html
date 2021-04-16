@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewpoert" content="width=device-width,intial-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="descriprion" content="Mehran photography website">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta property="og:title" content="Mehran">
+  <meta name="author" content="Mehran Hosseini">
+  <meta name="keywords" content="Mehran,Portfolio,Photography website,HTML,CSS,XML,JavaScript">
+  <title> MEHRAN </title>
+  <link rel="stylesheet" href="mehran.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css" />
+  <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body id="bodyInex" class="bodyFontFamily">
+
+  <div id="wholepage">
+    <div>
+      <a href="index.html" id="removeHover" class="hostName">
+        <span class="logoNameFontFamily">MEHRAN</span>
+      </a>
+    </div>
+
+    <nav>
+      <div class="humberger_menu"></div>
+      <ul id="navList" class="active">
+        <li id="B&W"><a href="B&W.html" class="nav">B&W</a></li>
+        <li id="Color"><a href="Color.html" class="nav">Color</a></li>
+        <li id="Theater"><a href="Theater.html" class="nav">Theater</a></li>
+        <li id="Blog"><a href="Blog.html" class="nav">Blog</a></li>
+        <li id="Home"><a href="index.html" class="nav">Home</a></li>
+        <li id="socialBadgesLi">
+          <div id="socialNetworkLinks">
+            <a href="https://www.facebook.com/profile.php?id=100008075235750" target="_blank">
+              <span class="fab fa-facebook-f  facebookIcon"></span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="footer" id="footerLines"><br /></div>
+
+  <script>
+    $('.humberger_menu').on('click', function() {
+      $('this').toggleClass('active');
+      $('nav ul').toggleClass('showing');
+    });
+  </script>
+
+  <br>
+  <br>
+  <br>
+
+  <div id="wrapper">
+    <div id="content">
+      <div id="box">
+        <div id="view">
+          <img class="thumb" alt="" />
+          <div id="titleOfImage"></div>
+        </div>
+        <div id="thumbs">
+          <div id="nav-left-thumbs">
+            <</div> <div id="pics-thumbs">
+              <div class="mcs-horizontal-example">
+                <a href="javascript: change(1)">
+                  <img src="IMG/B&W/1.jpg" alt="" />
+                </a>
+                <a href="javascript: change(2)">
+                  <img src="IMG/B&W/2.jpg" alt="" />
+                </a>
+                <a href="javascript: change(3)">
+                  <img src="IMG/B&W/3.png" alt="" />
+                </a>
+                <a href="javascript: change(4)">
+                  <img src="IMG/B&W/4.png" alt="" />
+                </a>
+                <a href="javascript: change(5)">
+                  <img src="IMG/B&W/5.jpg" alt="" />
+                </a>
+                <a href="javascript: change(6)">
+                  <img src="IMG/B&W/6.jpg" alt="" />
+                </a>
+                <a href="javascript: change(7)">
+                  <img src="IMG/B&W/7.jpg" alt="" />
+                </a>
+                <a href="javascript: change(8)">
+                  <img src="IMG/B&W/8.jpg" alt="" />
+                </a>
+                <a href="javascript: change(9)">
+                  <img src="IMG/B&W/9.png" alt="" />
+                </a>
+                <a href="javascript: change(10)">
+                  <img src="IMG/B&W/10.png" alt="" />
+                </a>
+              </div>
+          </div>
+          <div id="nav-right-thumbs">></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="zoom-slideshow.js"></script>
+  <script>
+    (function($) {
+      $(window).on('load', function() {
+        $('.mcs-horizontal-example').mCustomScrollbar({
+          axis: 'x',
+          theme: 'dark-thin'
+        });
+      });
+    })(jQuery);
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $('#view').setZoomPicture({
+        thumbsContainer: '#pics-thumbs',
+        prevContainer: '#nav-left-thumbs',
+        nextContainer: '#nav-right-thumbs',
+        loadMsg: '<img src="oie_10155884ba.gif" />',
+      });
+
+      const view = document.querySelector("#view .thumb");
+
+      view.addEventListener("click", (ev) => {
+        const src = ev.target.src;
+        const cnt = document.createElement("div");
+        const exit = document.createElement("div");
+        exit.classList.add("exit")
+        cnt.append(exit)
+        cnt.classList.add("big-image");
+        const img = document.createElement("img");
+        img.src = src;
+        cnt.append(img);
+        console.log(cnt);
+        document.querySelector("#box").append(cnt);
+        exit.addEventListener("click", () => {
+          document.querySelector("#box .big-image").remove()
+        })
+      });
+    });
+
+    function change(value) {
+      var div = document.getElementById('titleOfImage');
+      var text = '';
+      if (value == 1) text += 'Far off</br>2018';
+      if (value == 2) text += 'Shadow of truth</br>2018';
+      if (value == 3) text += 'Rachel Whiteread exhibition/Belvedere21</br>2018';
+      if (value == 4) text += 'Path</br>2018';
+      if (value == 5) text += 'Bookshelf-Inspired by Rachel Whiteread exhibition/Belvedere21</br>2018';
+      if (value == 6) text += 'The door-Inspired by Rachel Whiteread exhibition/Belvedere21</br>2018';
+      if (value == 7) text += 'Rachel Whiteread exhibition/Belvedere21</br>2018';
+      if (value == 8) text += 'Line</br>2018';
+      if (value == 9) text += 'Line</br>2018';
+      if (value == 10) text += 'Rachel Whiteread exhibition/Belvedere21</br>2018';
+      div.innerHTML = text;
+    }
+  </script>
+
+  <script src="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+
+  <footer>
+    <hr id="pageContentSeperatorLine">
+    <div id="textFooter">
+      <p> B&W - Present Ⓒ <p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

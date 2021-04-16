@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewpoert" content="width=device-width,intial-scale=1.0,maximum-scale=2.0,user-scalable=yes">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="descriprion" content="Mehran photography website">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta property="og:title" content="Mehran">
+  <meta name="author" content="Mehran Hosseini">
+  <meta name="keywords" content="Mehran,Portfolio,Photography website,HTML,CSS,XML,JavaScript">
+  <meta property="og:type" content="video" />
+  <meta property="og:video" content="https://mehran.at/video-file3.mp4">
+  <title> MEHRAN </title>
+  <link rel="stylesheet" href="mehran.css">
+  <link rel="stylesheet" href="zoom-slide-show/style.css">
+  <link rel="stylesheet" href="malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css" />
+  <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body id="bodyInex" class="bodyFontFamily">
+
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=2187805491505441&autoLogAppEvents=1"></script>
+
+  <div id="wholepage">
+    <div>
+      <a href="index.html" id="removeHover" class="hostName">
+        <span class="logoNameFontFamily">MEHRAN</span>
+      </a>
+    </div>
+    <nav>
+      <div class="humberger_menu"></div>
+      <ul id="navList" class="active">
+        <li id="B&W"><a href="B&W.html" class="nav">B&W</a></li>
+        <li id="Color"><a href="Color.html" class="nav">Color</a></li>
+        <li id="Theater"><a href="Theater.html" class="nav">Theater</a></li>
+        <li id="Blog"><a href="Blog.html" class="nav">Blog</a></li>
+        <li id="Home"><a href="index.html" class="nav">Home</a></li>
+        <li id="socialBadgesLi">
+          <div id="socialNetworkLinks">
+            <a href="https://www.facebook.com/profile.php?id=100008075235750" target="_blank">
+              <span class="fab fa-facebook-f  facebookIcon"></span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer" id="footerLines"><br /></div>
+  <script>
+    $('.humberger_menu').on('click', function () {
+      $('this').toggleClass('active');
+      $('nav ul').toggleClass('showing');
+    });
+  </script>
+  <section class="blog">
+    <div id="Video_player_box">
+      <div class="fb-share-button" data-href="video-file1.mp4" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Shareee</a></div>
+      <video id="myVideo" controls="controls">
+        <source src="video-file1.mp4">
+      </video>
+      <p>Description</p>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.mehran.at/Blog.html">SHARE</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+#view img {
+  width: 999px !important;
+}
+
+#content {
+  text-align: center;
+}
+
+#view {
+  margin: 0px 0;
+  padding-top: 10px;
+  height: auto !important;
+}
+
+#thumbs {
+  position: relative;
+  margin: 20px 0;
+  text-align: center;
+}
+
+#nav-left-thumbs {
+  left: -10px;
+}
+
+#nav-right-thumbs {
+  right: -10px;
+}
+
+#nav-left-thumbs, #nav-right-thumbs {
+  position: absolute;
+  top: 66px;
+  width: -10px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1em;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+  color: tomato;
+  cursor: pointer;
+  text-align: center;
+  /* transition-duration: 1s; */
+}
+
+#pics-thumbs {
+  position: relative;
+  margin: 60px auto 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 999px;
+  /* transition-duration: .8s; */
+}
+
+#pics-thumbs img {
+  margin: 0 2px;
+  cursor: pointer;
+  height: 55px;
+  width: auto;
+  /* transition-duration: .4s; */
+}
+
+/*--------------------------------------------------media query----------------------------------*/
+@media screen and (max-width: 1000px) {
+  #nav-left-thumbs, #nav-right-thumbs {
+    width: 100%;
+    /* The width is 100%, when the viewport is 800px or smaller */
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #view {
+    display: none;
+    padding-top: 38px;
+  }
+
+  #view img {
+    width: 20px;
+  }
+
+  #thumbs {
+    position: static;
+  }
+
+  #pics-thumbs img {
+    position: relative;
+    margin: 10px auto;
+    width: 90%;
+    height: auto;
+    display: block;
+  }
+
+  #pics-thumbs {
+    width: 100% !important;
+  }
+
+  #wrapper {
+    width: none;
+    margin: none;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  #wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
