@@ -1,7 +1,7 @@
 malihu custom scrollbar plugin
 ================================
 
-Highly customizable custom scrollbar jQuery plugin ([Demo](http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/complete_examples.html)). Features include: 
+Highly customizable custom scrollbar jQuery plugin ([Demo](https://manos.malihu.gr/repository/custom-scrollbar/demo/examples/complete_examples.html)). Features include: 
 
 * Vertical and/or horizontal scrollbar(s)  
 * Adjustable scrolling momentum 
@@ -13,7 +13,7 @@ Highly customizable custom scrollbar jQuery plugin ([Demo](http://manos.malihu.g
 * User-defined callbacks 
 * Selectable/searchable content
 
-**[Plugin homepage and documentation](http://manos.malihu.gr/jquery-custom-content-scroller/)** ([Changelog](http://manos.malihu.gr/jquery-custom-content-scroller/2/)) 
+**[Plugin homepage and documentation](https://manos.malihu.gr/jquery-custom-content-scroller/)** ([Changelog](https://manos.malihu.gr/jquery-custom-content-scroller/2/)) 
 
 #### Installation
 
@@ -21,13 +21,13 @@ npm: `npm install malihu-custom-scrollbar-plugin`
 
 Bower: `bower install malihu-custom-scrollbar-plugin` 
 
-[Manual](http://manos.malihu.gr/jquery-custom-content-scroller/#get-started-section) 
+[Manual](https://manos.malihu.gr/jquery-custom-content-scroller/#get-started-section) 
 
 #### Usage 
 
 Manual: `$(selector).mCustomScrollbar();` 
 
-[Browserify](http://browserify.org/): 
+[Browserify](https://browserify.org/): 
 
     var $ = require('jquery');
     require('malihu-custom-scrollbar-plugin')($);
@@ -74,7 +74,7 @@ License
 
 MIT License (MIT)
 
-http://opensource.org/licenses/MIT
+https://opensource.org/licenses/MIT
 
 Donate 
 -------------------------

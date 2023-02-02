@@ -1,9 +1,9 @@
 /*
 == malihu jquery custom scrollbar plugin == 
 Version: 3.1.5 
-Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller 
+Plugin URI: https://manos.malihu.gr/jquery-custom-content-scroller
 Author: malihu
-Author URI: http://manos.malihu.gr
+Author URI: https://manos.malihu.gr
 License: MIT License (MIT)
 */
 
@@ -48,7 +48,7 @@ and dependencies (minified).
 (function(init){
 	var _rjs=typeof define==="function" && define.amd, /* RequireJS */
 		_njs=typeof module !== "undefined" && module.exports, /* NodeJS */
-		_dlp=("https:"==document.location.protocol) ? "https:" : "http:", /* location protocol */
+		_dlp=("https:"==document.location.protocol) ? "https:" : "https:", /* location protocol */
 		_url="cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js";
 	if(!_rjs){
 		if(_njs){
